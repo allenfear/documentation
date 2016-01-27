@@ -6,7 +6,7 @@ category:
 keywords: payment, payment method, credit card, add card, update card
 ---
 Easily add a new credit card or edit the existing payment method of a site from within the Dashboard.
-
+This has be modified.
 ## Update an Existing Card
 
 1. Within the **Billing** tab, select the card you want to edit, and click **Update Payment Method**.

@@ -6,6 +6,7 @@ category:
   - drupal
 keywords: drupal, configuration, drupal 8
 ---
+This has be modified.
 Managing configuration is an extremely important part of any team website project, but in many cases, this area of the project does not receive as much attention as it deserves. The tools for Drupal 7 do not provide complete coverage of all configuration settings, leading to inconsistencies in configuration handling and inconvenient workarounds. This has led to configuration management becoming a real thorn in the side for many projects.
 
 Pantheon supports the [Drupal 8 Configuration Management system](https://www.drupal.org/documentation/administer/config) and defaults configuration into the `sites/default/config` directory for each Pantheon Drupal 8 site. You can export your configuration into that directory directly using Drush's config-export command or indirectly using Drupal's UI to download the configuration and then use SFTP/Git to place the configuration in `sites/default/config`. For more information on how this all works, check out Matt Cheney and David Strauss' presentation on [Drupal 8 CMI on Managed Workflow at Drupalcon Amsterdam](https://amsterdam2014.drupal.org/session/drupal-8-cmi-managed-workflow).
@@ -32,7 +33,7 @@ This keeps us from needing to use `--site=book-blog` with all of our terminus co
 
 ### Workflow Example
 
-1. `terminus drush 'cex -y' 
+1. `terminus drush 'cex -y'
 2. `terminus site code commit --env=dev --message="Export configuration to code"`
 3. `terminus site deploy --env=test --sync-content --cc --note="Deploy configuration to test"`
 4. `terminus drush 'cim -y'
